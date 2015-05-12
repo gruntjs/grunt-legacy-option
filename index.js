@@ -1,4 +1,4 @@
-/*
+/*!
  * grunt <http://gruntjs.com/>
  *
  * Copyright (c) 2015 "Cowboy" Ben Alman
