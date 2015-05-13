@@ -17,7 +17,7 @@ npm i grunt-legacy-option --save
 ## Usage
 
 ```js
-var option = require('grunt-legacy-option');
+var option = require('grunt-legacy-option').create();
 ```
 
 ## API
