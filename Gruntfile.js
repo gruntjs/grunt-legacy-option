@@ -1,7 +1,7 @@
-/*
+/*!
  * grunt <http://gruntjs.com/>
  *
- * Copyright (c) 2015 "Cowboy" Ben Alman
+ * Copyright (c) 2013-2015 "Cowboy" Ben Alman.
  * Licensed under the MIT license.
  */
 
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         options: {
           reporter: 'spec'
         },
-        src: ['test/**/*.js']
+        src: ['test/*.js']
       }
     }
   });
