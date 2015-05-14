@@ -1,4 +1,4 @@
-# grunt-legacy-option [![NPM version](https://badge.fury.io/js/grunt-legacy-option.svg)](http://badge.fury.io/js/grunt-legacy-option)
+# grunt-legacy-option [![NPM version](https://badge.fury.io/js/grunt-legacy-option.svg)](http://badge.fury.io/js/grunt-legacy-option) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 > Grunt's option methods, as a standalone library.
 
@@ -33,6 +33,7 @@ _(loosely in this order...)_
 * [x] migrate code
 * [x] migrate tests
 * [x] get tests passing with 100% parity
+* [x] add Grunfile
 * [ ] coverage
 * [ ] API documentation, written as code comments
 * [ ] Add the event to the changelogs of both libraries
@@ -41,11 +42,15 @@ _(loosely in this order...)_
 
 * [ ] replace core `grunt.option` internal module with `grunt-legacy-option`
 * [ ] remove any dependencies that are no longer needed from grunt.
+* [ ] enable travis
+* [ ] add travis badge
 
 ## Related projects
 
 * [grunt](http://gruntjs.com/): The JavaScript Task Runner
 * [grunt-cli](http://gruntjs.com/): The grunt command line interface.
+* [grunt-legacy-log](http://gruntjs.com/): The Grunt 0.4.x logger.
+* [grunt-legacy-util](http://gruntjs.com/): Some old grunt utils provided for backwards compatibility.
 
 ## Running tests
 
@@ -53,14 +58,6 @@ Install dev dependencies:
 
 ```sh
 $ npm install -d && grunt
-```
-
-## Building docs
-
-Install dev dependencies, then run [verb](https://github.com/verbose/verb):
-
-```js
-$ npm install -d && verb
 ```
 
 ## Contributing
