@@ -7,9 +7,7 @@
 
 'use strict';
 
-/* deps: mocha */
 var assert = require('assert');
-var should = require('should');
 var option = require('./');
 
 describe('option', function () {
@@ -20,18 +18,18 @@ describe('option', function () {
 
   it('option.init', function() {
     var expected = {foo:'bar', bool:true, 'bar':{foo:'bar'}};
-    this.option.init(expected).should.eql(expected);
+    assert.deepEqual(this.option.init(expected), expected);
   });
 
   it('option', function() {
-    this.option('foo', 'bar').should.equal(this.option('foo'));
+    assert.equal(this.option('foo', 'bar'), this.option('foo'));
 
     this.option('foo', {foo:'bar'});
-    this.option('foo').should.eql({foo:'bar'});
-    this.option('no-there').should.be.false;
+    assert.deepEqual(this.option('foo'), {foo:'bar'});
+    assert.equal(this.option('no-there'), false);
 
     this.option('there', false);
-    this.option('no-there').should.be.true;
+    assert.equal(this.option('no-there'), true);
   });
 
   it('option.flags', function() {
@@ -41,7 +39,7 @@ describe('option', function () {
       obj: {foo: 'bar'},
       arr: []
     });
-    this.option.flags().should.eql(['--foo=bar', '--there', '--obj=[object Object]']);
+    assert.deepEqual(this.option.flags(), ['--foo=bar', '--there', '--obj=[object Object]']);
   });
 });
 

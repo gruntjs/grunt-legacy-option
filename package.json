@@ -29,8 +29,11 @@
     "test": "mocha"
   },
   "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-mocha-test": "^0.12.7",
+    "jshint-stylish": "^1.0.2",
     "mocha": "^2.2.4",
-    "should": "^6.0.1",
     "verb": "0.7.0"
   },
   "keywords": [
